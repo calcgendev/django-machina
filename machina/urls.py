@@ -10,7 +10,7 @@ from django.conf.urls import include, url
 
 from machina.core.loading import get_class
 from machina.core.urls import URLPatternsFactory
-
+from django.contrib.auth.models import Group
 
 class BoardURLPatternsFactory(URLPatternsFactory):
     """ Allows to generate the URL patterns of the whole forum application. """

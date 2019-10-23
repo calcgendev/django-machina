@@ -59,11 +59,12 @@
               </div>
             </td>
             {% endif %}
-            <td class="align-top">
+            {% comment %} Threads are displayed here {% endcomment %}
+             <td class="align-top">
               <a href="{% url 'forum:forum' node.obj.slug node.obj.id %}" class="forum-name-link">{{ node.obj.name }}</a>
               <div class="forum-description">{{ node.obj.description.rendered }}</div>
               <div class="sub-forums"><small>{{ children }}</small></div>
-            </td>
+            </td> 
           </tr>
         </table>
       </div>
