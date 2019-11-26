@@ -1,5 +1,5 @@
 {% load forum_member_tags %}
-{% if profile %}
+{% if profile.user.profile_image %}
 <img class="avatar" src="{{ profile.user.profile_image.url }}" alt="{{ profile.user.username }}" />
 {% elif show_placeholder %}
 <span class="avatar empty">

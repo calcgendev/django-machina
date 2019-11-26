@@ -91,11 +91,12 @@
                 {% include "partials/avatar.html" with profile=post.poster.forum_profile show_placeholder=True %}
               </a>
             </div>
-            <div class="username"><a href="{% url 'forum_member:profile' post.poster_id %}"><b>{{ post.poster|forum_member_display_name }}</b></a></div>
-            <div class="posts-count text-muted"><b>{% trans "Posts:" %}</b>&nbsp;{{ post.poster.forum_profile.posts_count }}</div>
+            <br>
+            <div class="username23"><a href="{% url 'forum_member:profile' post.poster_id %}"><b>{{ post.poster|forum_member_display_name }}</b></a></div>
+            <div class="username233"><b>{% trans "Posts:" %}</b>&nbsp;{{ post.poster.forum_profile.posts_count }}</div>
             {% else %}
-            <div class="username"><b>{{ post.username }}</b></div>
-            <div class="username text-muted">{% trans "Anonymous user" %}</div>
+            <div class="username23"><b>{{ post.username }}</b></div>
+            <div class="username23 text-muted">{% trans "Anonymous user" %}</div>
             {% endif %}
           </div>
         </div>
